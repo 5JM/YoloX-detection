@@ -1,4 +1,5 @@
 # SmokeDetection - Performance
+<!--
 ### - Dataset
 #### &ensp; train / valid / test (images) & annotations (json labels) : smoke detection 데이터 
 #### &ensp; smoke_test_data_classification: classification 성능 계산용 데이터
@@ -17,9 +18,18 @@ smoke detect 유무로 판단
   Precision: 88.406%
   Recall: 87.143%
 ``` 
+-->
+## Performance
+### - Classification 
+smoke detect 유무로 판단
+| class   | Precision     | Recall |
+|:--------|:-------|:-------|
+| fov170    | 90.91 | 90.91 |
+| fov90    | 88.406 | 87.143 |
+
 
 ---
-### - Detection (confidence 0.1 & nms threshold 0.3) 
+### - Detection (confidence 0.6 & nms threshold 0.3) 
 ### Room mirror (fov 170) 
 #### Average Precision:
 | class   | AP@0.5:0.95     | AP @0.5 |
@@ -34,14 +44,14 @@ smoke detect 유무로 판단
 
 ### Steering Wheel (fov 90)
 #### Average Precision:
-| class   | AP@0.5:0.95     |
-|:--------|:-------|
-| smoke    | 38.968 |
+| class   | AP@0.5:0.95      |AR @0.5 |
+|:--------|:-------|:-------|
+| smoke    | 38.968 | 76.0
 
 #### Average Recall:
-| class   | AR @0.5:0.95    |
-|:--------|:-------|
-| smoke    | 45.359 |
+| class   | AR @0.5:0.95    | AR @0.5 |
+|:--------|:-------|:-------|
+| smoke    | 45.359 | 80.1
 
 ---
 ### Demo
